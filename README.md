@@ -7,7 +7,7 @@ The main code
 The disassembly automatically generated code
 <img src="images/github2.png" >
 
-The watch windows
+The watch window
 <img src="images/github3.png" >
 
 The registers being used to move data back and forth
