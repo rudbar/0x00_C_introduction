@@ -17,6 +17,6 @@ The registers being used to move data back and forth:
 
 <img src="images/github4.png" >
 
-Changing the value in the virtual memory with pointers:
+Checking the values in the virtual memory with pointers:
 
 <img src="images/github5.png" >
