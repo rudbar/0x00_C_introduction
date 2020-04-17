@@ -50,40 +50,26 @@ int WinMain(
 
 	int LargeS; // 32 bits - 4 billion
 	int unsigned LargeU;
-	*/
+	
 
 	projectile Test;
+	*/
 
-	int SizeOfChar = sizeof(char unsigned);
-	int SizeOfInt = sizeof(int);
-	int SizeOfProjectile = sizeof(projectile);
-	int SizeOfTest = sizeof(Test);
+	int y = 5;
+	int *yptr0 = 0;
+	int *yptr1 = 0;
 
-	Test.IsThisOnFire = 1;
-	Test.Damage = 2;
-	Test.ParticlesPerSecond = 3;
-	Test.HowManyCooks = 4;
+	yptr0 = &y;
+
+	if(y == 5)
+	{
+		int x = 6;
+		int y = 4;
+
+		yptr1 = &y;
+	}
 
 
-	projectile Projectiles[40];
-
-	int WhichProjectile = 4;
-	Projectiles[WhichProjectile];
-
-	projectile *ProjectilePointer = Projectiles;
-
-	int SizeOfProjectiles = sizeof(Projectiles); // 16 * 40
-	int SizeOfProjectilePointer = sizeof(ProjectilePointer); // 4
-
-	Projectiles[30].Damage = 60;
-	(ProjectilePointer + 30)->Damage = 100;
-
-	char *BytePointer = (char *)ProjectilePointer;
-	BytePointer = BytePointer + 30 * sizeof(projectile);
-	projectile *Thirty = (projectile *)BytePointer;
-	Thirty->Damage = 200;
-
-	((projectile *)((char *)ProjectilePointer + 30 * sizeof(projectile)))->Damage = 200;
 }
 
 
